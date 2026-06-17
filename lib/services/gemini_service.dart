@@ -43,7 +43,7 @@ class ReceiptScanResult {
 }
 
 class GeminiService {
-  GeminiService({String? apiKey});
+  GeminiService();
 
 
   Future<ReceiptScanResult> analyzeReceiptImage(File imageFile) async {
@@ -262,9 +262,6 @@ String _extractNotes(String category) {
 
     return 'Others';
   }
-
-  // In lib/services/gemini_service.dart
-// Replace generateSpendingInsights with this method:
 
 SpendingInsights generateSpendingInsights(List<Expense> expenses) {
   if (expenses.isEmpty) {

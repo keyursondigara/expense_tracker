@@ -78,7 +78,7 @@ class _ScannerPageState extends ConsumerState<ScannerPage> {
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.04),
+                    color: Colors.black.withValues(alpha: 0.04),
                     blurRadius: 18,
                     offset: const Offset(0, 10),
                   ),
@@ -216,7 +216,7 @@ class _InfoRow extends StatelessWidget {
           Expanded(
             flex: 2,
             child: Text(
-              '$label',
+              label,
               style: const TextStyle(fontSize: 13, color: Color(0xFF6D6D78)),
             ),
           ),

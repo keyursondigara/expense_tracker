@@ -46,7 +46,7 @@ class ExpenseRepository {
 
   Future<Expense> addExpense(Expense expense) async {
     final collection = _isar.collection<ExpenseEntity>();
-    final id = expense.id!.isEmpty ? _uuid.v4() : expense.id;
+    final id = expense.id.isEmpty ? _uuid.v4() : expense.id;
     final entity = ExpenseEntity()
       ..uid = id
       ..title = expense.title

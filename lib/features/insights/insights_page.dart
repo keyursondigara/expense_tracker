@@ -72,7 +72,7 @@ class _EmptyState extends StatelessWidget {
               width: 100,
               height: 100,
               decoration: BoxDecoration(
-                color: Colors.deepPurple.withOpacity(0.12),
+                color: Colors.deepPurple.withValues(alpha: 0.12),
                 borderRadius: BorderRadius.circular(24),
               ),
               child: const Icon(Icons.insights_outlined, size: 48, color: Color(0xFF5E35B1)),
@@ -177,7 +177,7 @@ class _SummaryCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: Colors.black.withOpacity(0.07), width: 0.5),
+        border: Border.all(color: Colors.black.withValues(alpha: 0.07), width: 0.5),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -210,7 +210,7 @@ class _Card extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.black.withOpacity(0.07), width: 0.5),
+        border: Border.all(color: Colors.black.withValues(alpha: 0.07), width: 0.5),
       ),
       child: child,
     );
@@ -411,7 +411,7 @@ class _DonutPainter extends CustomPainter {
       final sweepAngle =
           (categoryTotals[i].amount / total) * 2 * math.pi * progress;
       paint.color =
-          _colorFor(i).withOpacity(i == tappedIndex ? 1.0 : 0.85);
+          _colorFor(i).withValues(alpha: i == tappedIndex ? 1.0 : 0.85);
       final r = i == tappedIndex ? radius + 6 : radius;
       canvas.drawArc(
         Rect.fromCircle(center: center, radius: r),

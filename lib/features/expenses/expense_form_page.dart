@@ -66,7 +66,7 @@ class _ExpenseFormPageState extends ConsumerState<ExpenseFormPage> {
                   borderRadius: BorderRadius.circular(22),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.04),
+                      color: Colors.black.withValues(alpha: 0.04),
                       blurRadius: 18,
                       offset: const Offset(0, 10),
                     ),
@@ -102,7 +102,7 @@ class _ExpenseFormPageState extends ConsumerState<ExpenseFormPage> {
               ),
               const SizedBox(height: 16),
               DropdownButtonFormField<String>(
-                value: _selectedCategory,
+                initialValue: _selectedCategory,
                 items: expenseCategories
                     .map(
                       (category) => DropdownMenuItem(
