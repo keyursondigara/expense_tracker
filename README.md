@@ -17,3 +17,11 @@ AI-powered expense management application built with Flutter.
 - Dart
 - Isar Database
 - Google ML Kit
+
+  ## Demo Video
+  https://drive.google.com/file/d/1WGATEPXpkJ_hZrpRrYg_EHapabUFct_G/view?usp=sharing
+
+  ## APK File
+  https://drive.google.com/file/d/1tvI3kPj8fYWLWz1HqLhLgWbbUwd_g-JU/view?usp=sharing
+
+
